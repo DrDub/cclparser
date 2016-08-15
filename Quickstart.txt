@@ -1,0 +1,3 @@
+make
+./main/UnknownOS/cclparser example.execseq
+result will be in example.1

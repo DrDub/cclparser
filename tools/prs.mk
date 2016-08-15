@@ -61,7 +61,7 @@ CC					=	g++
 #
 
 ifndef COPT
-COPT = 
+COPT =  -fpermissive
 CDEBUG				= -g -DTRACING
 # For additional debugging, uncomment the following line
 #CDEBUG				+= -DDEBUG -DDETAILED_DEBUG
