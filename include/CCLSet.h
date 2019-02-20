@@ -48,6 +48,7 @@ struct SLinkPair
     SLinkPair& operator=(SLinkPair const& LinkPair) {
         m_End = LinkPair.m_End;
         m_Depth = LinkPair.m_Depth;
+        return *this;
     }
 };
 
