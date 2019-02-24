@@ -198,7 +198,7 @@ public:
     }
     // returns true if the best adjacency position has already been used
     bool BestIsUsed(unsigned int UnitSide) {
-        m_pUnit[UnitSide]->AdjUsed(BestAdjPos(UnitSide));
+        return m_pUnit[UnitSide]->AdjUsed(BestAdjPos(UnitSide));
     }
     // return a pointer to the unit on the given side
     // (LEFT - prefix unit, RIGHT - last unit).

@@ -48,6 +48,7 @@ public:
         m_Strg = Ent.m_Strg;
         m_Data = Ent.m_Data;
         m_Props = Ent.m_Props;
+        return *this;
     }
     CRef* GetData() { return (CRef*)m_Data; }
     float GetStrg() { return m_Strg; }

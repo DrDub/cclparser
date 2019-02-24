@@ -177,7 +177,7 @@ public:
             yPError(ERR_OUT_OF_RANGE, "property not supported by table");
         }
 
-        m_pLastVal = IncStrength(*pKey, Code, Strg);
+        m_pLastVal = this->IncStrength(*pKey, Code, Strg);
         m_pLastKey = CStrengths<K, V>::GetKey();
     }
     // Same as above, but for the entry currently cached.
@@ -191,7 +191,7 @@ public:
             yPError(ERR_OUT_OF_RANGE, "property not supported by table");
         }
 
-        IncStrength(m_pLastVal, Code, Strg);
+        this->IncStrength(m_pLastVal, Code, Strg);
     }
     
     // Get the number of entries in the top list
